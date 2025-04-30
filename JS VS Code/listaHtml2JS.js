@@ -5,7 +5,7 @@ function gerarCaracterAleatorio(){
     return caracteres.charAt(numeroaleatorio);
 }
 function mostrar(){
-    let quantidade = Number(prompt("Irforme quantos caracteres sua de ter: "))
+    let quantidade = Number(prompt("Informe quantos caracteres sua de ter: "))
 
     if(quantidade == 1){
         alert("Senha: " + gerarCaracterAleatorio())
@@ -13,7 +13,7 @@ function mostrar(){
         alert("Senha: " + gerarCaracterAleatorio() + gerarCaracterAleatorio())
     } else if(quantidade == 3){
         alert("Senha: " + gerarCaracterAleatorio() + gerarCaracterAleatorio()
-      + gerarCaracterAleatorio() )
+       + gerarCaracterAleatorio() )
     } else if(quantidade == 4){
         alert("Senha: " + gerarCaracterAleatorio() + gerarCaracterAleatorio()
        + gerarCaracterAleatorio() + gerarCaracterAleatorio())
@@ -27,7 +27,7 @@ function mostrar(){
 // Descrição: Substitui as vogais de uma frase por símbolos.
 // Entradas: Texto simples (ex: "olá mundo").
 // Exemplo de Saída: "ol@ m*nd#"
-function decodificador(){
+function exercicio1Lista2(){
     let aviso = prompt("Vamos decodificar as mensagens! (Digite 'ok' para continuar)")
     let mensagem = prompt("Digite uma frase simples: ")
 
@@ -39,12 +39,13 @@ function decodificador(){
 // pegar os valores como strings e depois convertê-los para números com
 // Number ).
 // Mostre o resultado da soma desses dois números usando alert .
-function soma(){
+function exercicio2Lista2(){
     let aviso = prompt("Vamos somar dois números! (Digite 'ok' para continuar)")
     let num1 = Number(prompt("Digite um número: "))
     let num2 = Number(prompt("Digite mais um número: "))
     let soma = num1 + num2
     alert(`A soma de ${num1} + ${num2} é = ${soma}`)
+
 }
 
 // 3. Gerador de Nome de Super-herói
@@ -141,7 +142,25 @@ function exercicio10Lista2(){
     let min = 0
     let max = 10
     let numeroaleatorio = Math.floor(Math.random() * (max - min) + min)
-    let soma = 
+    let soma = numero + numeroaleatorio
 
+    if(soma %2 === 0){
+        if(parOuImpar == "par")
+        alert("Você ganhou! Você digitou: " + parOuImpar + " e " + numero + ". \nO número aleatório é " + numeroaleatorio + ", e a soma é: " + soma)
+    else alert("Você perdeu! Você digitou: " + parOuImpar + " e " + numero + ". \nO número aleatório é " + numeroaleatorio + ", e a soma é: " + soma)
+    }else {
+        if(parOuImpar == "impar")
+            alert("Você ganhou! Você digitou: " + parOuImpar + " e " + numero + ". \nO número aleatório é " + numeroaleatorio + ", e a soma é: " + soma)
+       else alert("Você perdeu! Você digitou: " + parOuImpar + " e " + numero + ". \nO número aleatório é " + numeroaleatorio + ", e a soma é: " + soma)
+    }
 
+}
+
+// 14. Contador de Cliques por Segundo
+// Descrição: Conta quantos cliques o usuário deu.
+// Entradas: Cliques em botão.
+// Exemplo de Saída: “Você clicou 32 vezes!” Ao clicar no botão de resultado.
+
+function exercicio14Lista2(){
+    let
 }
