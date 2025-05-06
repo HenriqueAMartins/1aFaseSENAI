@@ -4,7 +4,7 @@ function gerarCaracterAleatorio(){
 
     return caracteres.charAt(numeroaleatorio);
 }
-function mostrar(){
+function exercicio14Lista2(){
     let quantidade = Number(prompt("Informe quantos caracteres sua de ter: "))
 
     if(quantidade == 1){
@@ -22,6 +22,7 @@ function mostrar(){
        + gerarCaracterAleatorio() + gerarCaracterAleatorio() + gerarCaracterAleatorio())
     } 
 }
+
 
 // 1. Decodificador de Mensagem
 // Descrição: Substitui as vogais de uma frase por símbolos.
@@ -161,6 +162,11 @@ function exercicio10Lista2(){
 // Entradas: Cliques em botão.
 // Exemplo de Saída: “Você clicou 32 vezes!” Ao clicar no botão de resultado.
 
+let contadordecliques = 0
 function exercicio14Lista2(){
-    let
+    contadordecliques++
 }
+function mostrarcliques(){
+    alert("Você clicou: " + contadordecliques + " vezes!")
+}
+
