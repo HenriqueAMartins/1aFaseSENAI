@@ -165,3 +165,99 @@ function exercicio13(){
         contador++
     }
 }
+
+
+// -------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------
+
+
+// PARTE 2
+// 1. Calcule a soma dos números de 1 a 10.
+
+
+
+// 2. Calcule a multiplicação de 1 a 5 (fatorial de 5).
+
+
+
+// 3. Conte quantos números pares existem entre 1 e 50.
+
+
+
+// 4. Conte quantos múltiplos de 6 existem até 100.
+
+
+
+// 5. Conte de 1 a 30, pulando os múltiplos de 4.
+
+
+
+// 6. Some os números de 1 a 100, mas pare se a soma passar de 400.
+function exercicio6Parte2(){
+    let cont = 1
+    while(cont <= 100 && soma <= 400){
+        soma = soma + cont
+        console.log('Cont: ' + cont)
+        console.log('Soma: ' + soma)
+        console.log('=======================')
+        cont++ //modificação da contagem
+    }
+    console.log("Soma: ") + soma
+}
+
+
+// 7. Simule uma senha com 3 tentativas
+
+
+
+// 8. Conte os números de 1 a 50, mas pare se chegar a 30.
+
+
+
+// 9. Conte até 100, mas exiba uma mensagem especial no 50.
+
+
+
+// 10. Conte de 10 a 0 e diga “Lançamento!” ao final.
+
+
+
+// 11. Conte até 30 e diga “Pulando!” para múltiplos de 7.
+
+
+
+// 12. Conte de 1 a 20 e diga “Especial!” para múltiplos de 2 e 3 ao mesmo tempo.
+
+
+
+// 13. Conte de 1 a 10 e diga se o número é menor ou maior que 5.
+
+
+
+// 14. Faça um loop que pare ao chegar em um número aleatório entre 1 e 10(simulado).
+
+
+
+// 15. Mostre todos os divisores de um número X (por exemplo, 24).
+
+
+
+// 16. Some apenas os números ímpares entre 1 e 20.
+
+
+
+// 17. Conte os múltiplos de 9 entre 1 e 100.
+
+
+
+// 18. Conte os números de 50 até 0 que não são múltiplos de 5.
+
+
+
+// 19. Calcule a soma dos números pares até 100.
+
+
+
+// 20. Simule o funcionamento de um semáforo (verde → amarelo → vermelho).
+
+
