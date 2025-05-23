@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cssstyle.css">
+</head>
+<body>
+    <nav>
+        <button onclick="mostrarlogin()">Login</button>
+        <button onclick="mostrarcadastro()">Cadastro</button>
+    </nav>
+    <h1>Tela Supimpa</h1>
+   <div id="login">
+    <h2>Login</h2>
+    <div class="conteinerInput"></div>
+    <label for="nome">Nome</label>
+    <input type="text">
+    <br>
+    <label for="senha">Senha</label>
+    <input type="text">
+    <br>
+    <button onclick="logar()">Logar</button>
+    <br>
+   </div>
+
+   <div id="cadastro">
+   <h2>Cadastro</h2>
+   <label for="nome">Nome</label>
+   <input type="text">
+   <br>
+   <label for="senha">Senha</label>
+   <input type="text">
+   <br>
+   <button onclick="cadastrar()">Cadastrar</button>
+   
+   </div>
+
+    <script src="css.js"></script>
+</body>
+</html>
