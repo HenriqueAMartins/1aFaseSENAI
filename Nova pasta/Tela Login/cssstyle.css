@@ -32,7 +32,9 @@
     columns: black
     ;
 }
-
+#navbar{
+    display: none;
+}
 #produtos{
     display: none;
 }
@@ -73,4 +75,16 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.bt-secundario{
+    background-color: #eee;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
 }

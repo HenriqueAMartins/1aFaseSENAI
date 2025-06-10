@@ -1,40 +1,49 @@
-// let value, email, senha
-
 inicializar()
 
-let usuario = {
-    value: '',
-    email: '',
-    senha: '' 
-}
+let usuarios = []
+
+// let nomeTeste = ["usuario 1" , "usuario 2"]
+
 
 function cadastrar(){
-    value = document.getElementById('inpCadvalue').value 
-    email = document.getElementById('inpCadEmail').value 
-    senha =  document.getElementById('inpCadSenha').value
+
+    let usuario = {
+        nome: document.getElementById('inpCadNome').value,
+        email: document.getElementById('inpCadEmail').value,
+        senha: document.getElementById('inpCadSenha').value
+
+    }
+
+    usuarios.push(usuario)
+
     alert("Cadastrado com sucesso!!")
 
-    console.log(usuario);
+    console.log(usuarios)
+
     limparInputs()
     mostrarLogin()
 }
 
 function logar(){
-    let value = document.getElementById('inpLogvalue').value
+    let nome = document.getElementById('inpLogNome').value
     let senha = document.getElementById('inpLogSenha').value
-    if(value === usuario.value && senha === usuario.senha){
-        alert("Login efetuado com sucesso!")
+    
+    for(let i=0; i<usuarios.length; i++)    
+    if((nome === usuarios[i].nome || nome === usuarios[i].email) && senha === usuarios[i].senha){
+        alert("Login efetuado com sucesso! Olá " + usuarios[i].nome)
+        limparInputs()
         mostrarProdutos()
-    }else{
-        alert("Login não efetuado. Sem sucesso!")
+        // document.getElementById('navbar').style.display = 'block'
     }
+    // else{
+    //     alert("Login não efetuado. Sem sucesso!")
+    // }
 }
 
 function mostrarLogin(){
     esconderTodas()
     document.getElementById('login').style.display = 'flex'
     document.getElementById('inpLogNome').focus()
-
 }
 
 function mostrarCadastro(){
@@ -45,6 +54,7 @@ function mostrarCadastro(){
 function mostrarProdutos(){
     esconderTodas()
     document.getElementById('produtos').style.display = 'flex'
+    document.getElementById('navbar').style.display = 'flex'
 }
 
 function esconderTodas(){

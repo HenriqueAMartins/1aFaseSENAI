@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cssstyle.css">
+</head>
+<body>
+    <nav id="navbar">
+        <button onclick="mostrarLogin()">Login</button>
+        <button onclick="mostrarCadastro()">Cadastro</button>
+        <button onclick="mostrarProdutos()">Produtos</button>
+    </nav>
+    <main>
+
+        <section id="login">
+            <h1>Login</h1>
+            <br>
+            <div class="conteinerInput">
+                <label for="nome">Nome</label>
+                <input type="text" id="inpLogNome">
+                <br>
+            </div>
+            <div class="conteinerInput">
+                <label for="senha">Senha</label>
+                <input type="password" id="inpLogSenha">
+            </div>
+            <br>
+            <button onclick="mostrarCadastro()" class="bt-secundario">Não tem cadastro?</button>
+            <br>
+            <button onclick="logar()">Logar</button>
+        </section>
+        
+        <section id="cadastro">
+            <h1>Cadastro</h1>
+            <br>
+            <div class="conteinerInput">
+                <label for="nome">Nome</label>
+                <input type="text"  id="inpCadNome">
+            </div>
+            <br>
+            <div class="conteinerInput">
+                <label for="email">E-mail</label>
+                <input type="text" id="inpCadEmail">
+            </div>
+            <br>
+            <div class="conteinerInput">
+                <label for="senha">Senha</label>
+                <input type="password" id="inpCadSenha">
+        </div>
+        <br>
+        <button onclick="mostrarLogin()" class="bt-secundario">Já tenho Cadastro!</button>
+        <br>
+        <button onclick="cadastrar()">Cadastrar</button>
+    </section>
+    <section id="produtos">
+        <h1>Produtos</h1>
+        
+    </section>
+    
+ </main>
+    
+    <script src="css.js"></script>
+</body>
+</html>
