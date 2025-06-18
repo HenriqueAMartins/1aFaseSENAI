@@ -6,18 +6,22 @@
   <title>Login e Cadastro</title>
   <link rel="stylesheet" href="login.css">
 <body>
+  <script src="login.js"></script>
   <div class="container" id="login-container">
     <h2>Login</h2>
     <div class="form-group">
-      <label for="login-email">Email</label>
-      <input type="email" id="login-email">
+      <label for="login-email">Email:</label>
+      <input type="email" id="login-email" placeholder="seu@email.com">
     </div>
     <div class="form-group">
-      <label for="login-password">Senha</label>
-      <input type="password" id="login-password">
+      <label for="login-password">Senha:</label>
+      <input type="password" id="login-password" placeholder="senha">
+    </div>
+    <div class="toggle">
+      <span>Esqueceu a senha?<a onclick="toggleForms()"><br>Recuperar senha</a></span>
     </div>
     <div class="form-group">
-      <button onclick="login()">Entrar</button>
+      <br><button onclick="login()">Entrar</button>
     </div>
     <div class="toggle">
       <span>Não tem uma conta? <a onclick="toggleForms()"><br>Cadastre-se</a></span>
@@ -28,15 +32,15 @@
     <h2>Cadastro</h2>
     <div class="form-group">
       <label for="register-name">Nome</label>
-      <input type="text" id="register-name">
+      <input type="text" id="register-name" placeholder="nome completo">
     </div>
     <div class="form-group">
       <label for="register-email">Email</label>
-      <input type="email" id="register-email">
+      <input type="email" id="register-email" placeholder="seu@email.com">
     </div>
     <div class="form-group">
       <label for="register-password">Senha</label>
-      <input type="password" id="register-password">
+      <input type="password" id="register-password" placeholder="senha">
     </div>
     <div class="form-group">
       <button onclick="register()">Cadastrar</button>
